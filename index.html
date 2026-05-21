@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>轮回女祭司 初稿</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fbf8f1;
+      --paper: #fffdf8;
+      --ink: #26231f;
+      --muted: #6f675d;
+      --line: #e4d8c8;
+      --accent: #8b2f3c;
+      --accent2: #2f6659;
+      --soft: #f3e8dc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.72;
+      letter-spacing: 0;
+    }
+    header {
+      padding: 28px 18px 18px;
+      background: linear-gradient(180deg, #efe0d0, #fbf8f1);
+      border-bottom: 1px solid var(--line);
+    }
+    main {
+      width: min(860px, 100%);
+      margin: 0 auto;
+      padding: 14px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.2;
+      color: var(--accent);
+    }
+    h2 {
+      margin: 28px 0 12px;
+      font-size: 22px;
+      line-height: 1.3;
+      color: var(--accent);
+    }
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 18px;
+      line-height: 1.35;
+      color: var(--accent2);
+    }
+    p { margin: 8px 0; }
+    a { color: var(--accent); }
+    .subtitle {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+    }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px;
+      margin: 12px 0;
+      box-shadow: 0 1px 0 rgba(0,0,0,.02);
+    }
+    .toc {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .toc a {
+      display: block;
+      padding: 10px 12px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    details {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0;
+      margin: 12px 0;
+      overflow: hidden;
+    }
+    summary {
+      cursor: pointer;
+      padding: 13px 14px;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--soft);
+    }
+    details .inner { padding: 12px 14px 16px; }
+    ul, ol { padding-left: 1.25em; margin: 8px 0; }
+    li { margin: 5px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 14px;
+      background: var(--paper);
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px;
+      vertical-align: top;
+    }
+    th {
+      background: var(--soft);
+      color: var(--accent);
+      text-align: left;
+    }
+    .tag {
+      display: inline-block;
+      margin: 2px 4px 2px 0;
+      padding: 2px 8px;
+      border-radius: 99px;
+      background: #ead8cc;
+      color: #5b2b31;
+      font-size: 13px;
+    }
+    .quote {
+      border-left: 4px solid var(--accent);
+      padding: 8px 12px;
+      background: #fff7ef;
+      color: #3a332d;
+      margin: 12px 0;
+    }
+    .small { color: var(--muted); font-size: 13px; }
+    @media (max-width: 520px) {
+      h1 { font-size: 25px; }
+      h2 { font-size: 20px; }
+      main { padding: 10px; }
+      .card, details .inner { padding: 12px; }
+      table { font-size: 13px; }
+      th, td { padding: 7px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>《轮回女祭司》初稿</h1>
+    <p class="subtitle">生日聚会 / 七世轮回 / 关系还原 / 温馨结尾</p>
+    <nav class="toc">
+      <a href="#core">核心大纲</a>
+      <a href="#lives">七世因果链</a>
+      <a href="#roles">10人角色关系</a>
+      <a href="#flow">三幕流程</a>
+    </nav>
+  </header>
+  <main>
+    <section id="core" class="card">
+      <h2>核心大纲</h2>
+      <p><strong>一句话简介：</strong>主角原本是村中被献祭的女祭司。她没有真正死去，而是获得了“每 27 年重生一次”的诅咒能力。每一世，她都会在 27 岁生日当天死亡，然后以新的身份重新出生。</p>
+      <p>前六世里，她遇见了不同的人：父母、医生、兄弟、杀手、爱人、商业伙伴。大家看似互不相干，直到第七世生日宴，他们被主角全部邀请到场，才发现自己一生中最重要、最遗憾、最亏欠的那个人，都是同一个灵魂。</p>
+      <div class="quote">结尾核心：主角不再是被献祭的人。大家第一次共同选择，不让她独自承担命运。</div>
+      <h3>核心规则</h3>
+      <ul>
+        <li><strong>二十七年规则：</strong>女祭司被献祭后，将活过许多次人生，却永远不得越过第二十七个生日。</li>
+        <li><strong>记忆规则：</strong>每一世 24 岁后开始梦见前世，27 岁生日当天完整想起一切，并迎来死亡。</li>
+        <li><strong>因果规则：</strong>每一世死亡不是随机事故，而是前一世未完成的因果被带到下一世。</li>
+        <li><strong>第七世规则：</strong>第七世在 26 岁提前恢复大量记忆，于是在 27 岁生日当天把所有关键人物叫来。</li>
+      </ul>
+      <h3>世界观背景</h3>
+      <p>很久以前，山村“槐岚村”每 27 年会举行一次献祭。村民相信，女祭司的生命能换来村庄平安。</p>
+      <p>主角原本是第 27 任女祭司，名叫“祝宁”。她在 27 岁生日当天被献给山神。但献祭失败了。祝宁没有成为神的祭品，而成为了神的“年轮”。</p>
+    </section>
+
+    <section id="lives">
+      <h2>七世因果链</h2>
+      <details open>
+        <summary>原初：女祭司祝宁</summary>
+        <div class="inner">
+          <p><strong>身份：</strong>槐岚村第 27 任女祭司。</p>
+          <p><strong>死亡：</strong>27 岁生日当天被献祭。</p>
+          <p><strong>执念：</strong>想知道自己是否曾被真正爱过，而不是只被献给命运。</p>
+        </div>
+      </details>
+      <details>
+        <summary>第一世：艾琳 Nora</summary>
+        <div class="inner">
+          <p><strong>身份：</strong>导演 Charles 和诗人 Sophia 的女儿。</p>
+          <p><strong>人生：</strong>出生在普通但温暖的艺术家庭。她拼命学习，考上理想大学。</p>
+          <p><strong>死亡：</strong>27 岁生日当天，去学校报到或参加庆祝时遭遇车祸死亡。</p>
+          <p><strong>关键物件：</strong>录取通知书、母亲写给她的生日诗、父亲未剪完的家庭影像。</p>
+          <p><strong>可盘点：</strong>Nora 被送到医院时还有一线生机，但值班医生 Maogeng 当晚刚失去重要病人，处理迟缓。</p>
+        </div>
+      </details>
+      <details>
+        <summary>第二世：林歌 Liora</summary>
+        <div class="inner">
+          <p><strong>身份：</strong>身体虚弱的女孩，常年往返医院。</p>
+          <p><strong>人生：</strong>她喜欢唱歌，梦想成为女明星。她认识外科医生 Maogeng，两人因为都喜欢唱歌而熟悉。</p>
+          <p><strong>死亡：</strong>27 岁生日当天突发急症，Maogeng全力抢救但没有救回来。</p>
+          <p><strong>连锁后果：</strong>Maogeng太悲痛，随后面对车祸女孩 Nora 时状态崩溃，错过最佳抢救。</p>
+          <p><strong>关键物件：</strong>医院腕带、旧麦克风、Maogeng 写给她的歌谱。</p>
+        </div>
+      </details>
+      <details>
+        <summary>第三世：阿衡 Ren</summary>
+        <div class="inner">
+          <p><strong>身份：</strong>贫穷家庭出身的男生，加入地方帮派。</p>
+          <p><strong>人生：</strong>家里欠债，被催债逼到走投无路。大哥 Tommy 和二哥 Qingyuan 很照顾他。</p>
+          <p><strong>死亡：</strong>27 岁生日当天，大哥二哥准备带他出去吃好的。杀手刺杀 Tommy，阿衡为救 Tommy 挡枪死亡。</p>
+          <p><strong>关键物件：</strong>生日面馆小票、帮派徽章、沾血打火机。</p>
+        </div>
+      </details>
+      <details>
+        <summary>第四世：楚望 Vale</summary>
+        <div class="inner">
+          <p><strong>身份：</strong>想做“有用的人”的少年，后来成为杀手。</p>
+          <p><strong>人生：</strong>他提前有零散前世梦境，想做点有意义的事，却因能力太强、来历可疑，被人嫉妒追杀。后来被杀手救下并训练。</p>
+          <p><strong>死亡：</strong>27 岁生日当天，他接到刺杀 Tommy 的任务，误杀第三世的自己。刚要喊停，就被愤怒的 Tommy 反手射杀。</p>
+          <p><strong>关键物件：</strong>任务照片、消音器、写着“停”的半张纸。</p>
+        </div>
+      </details>
+      <details>
+        <summary>第五世：许川 Elias</summary>
+        <div class="inner">
+          <p><strong>身份：</strong>男性，寻找第一世父母的普通青年。</p>
+          <p><strong>人生：</strong>他循着旧电影资料来到剧院，认识舞蹈演员 Ashlee。Ashlee 正在参演 Charles 导演的舞台影像项目。他爱上 Ashlee，也第一次想认真活过 27 岁生日。</p>
+          <p><strong>死亡：</strong>27 岁生日当天，舞台事故中死亡。</p>
+          <p><strong>关键物件：</strong>舞台票根、Ashlee 的舞鞋、Charles 的旧胶片。</p>
+        </div>
+      </details>
+      <details>
+        <summary>第六世：商雨 Mira</summary>
+        <div class="inner">
+          <p><strong>身份：</strong>商业天才，与房地产大亨 Kevin 合作。</p>
+          <p><strong>人生：</strong>这一世主角带着前几世经验，成为极聪明的创业者。她认识 Kevin，发现他正是上一世投资舞蹈表演的人。</p>
+          <p><strong>死亡：</strong>生意破产后，Kevin想跳楼。主角冲上天台救他，27 岁生日当天为救 Kevin 从楼上滑落坠亡。</p>
+          <p><strong>关键物件：</strong>破产公告、天台钥匙、Kevin 的领带夹。</p>
+        </div>
+      </details>
+      <details>
+        <summary>第七世：今生主角</summary>
+        <div class="inner">
+          <p><strong>身份：</strong>27 岁生日宴主人。</p>
+          <p><strong>人生：</strong>这一世，主角在 26 岁提前恢复大量记忆。她邀请所有人参加生日宴，打算坦白一切，寻求打破诅咒的方法。</p>
+          <p><strong>生日事件：</strong>她在吃完蛋糕后死亡。</p>
+          <p><strong>最终真相方向：</strong>没有一个单独的“凶手”。只有当所有人承认他们生命中最重要的那些人都是主角，主角才不再是祭品。</p>
+        </div>
+      </details>
+    </section>
+
+    <section id="roles" class="card">
+      <h2>10人角色关系</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>角色</th>
+            <th>今生身份</th>
+            <th>前世关联</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>主角 / 闻栖</td><td>生日宴主人，27岁</td><td>所有前六世的主角</td></tr>
+          <tr><td>Charles</td><td>导演，受邀拍摄生日纪录片</td><td>第一世父亲，第五世再次相遇</td></tr>
+          <tr><td>Sophia</td><td>诗人 / 文学老师</td><td>第一世母亲，反复写同一首生日诗</td></tr>
+          <tr><td>Maogeng</td><td>外科医生</td><td>第二世医生，间接错过抢救第一世</td></tr>
+          <tr><td>Tommy</td><td>安保 / 餐厅老板 / 旧街区大哥</td><td>第三世大哥，第四世射杀主角</td></tr>
+          <tr><td>Qingyuan</td><td>律师 / 调查员</td><td>第三世二哥，一直追查杀手真相</td></tr>
+          <tr><td>Ashlee</td><td>舞蹈演员</td><td>第五世爱人</td></tr>
+          <tr><td>Kevin</td><td>房地产大亨 / 投资人</td><td>第五世投资人，第六世商业伙伴</td></tr>
+          <tr><td>沈灯</td><td>摄影师 / 视频剪辑师</td><td>记录者，见证死亡节点</td></tr>
+          <tr><td>槐序</td><td>主持人 / 民俗研究者</td><td>祭司后裔，维持献祭轮回</td></tr>
+        </tbody>
+      </table>
+      <p class="small">如果想让角色更像朋友聚会，可以把职业降级为朋友身份：短片导演朋友、写诗朋友、医生朋友、开餐馆朋友、律师朋友、跳舞朋友、有钱赞助朋友、摄影朋友、懂民俗的主持朋友。</p>
+    </section>
+
+    <section id="flow">
+      <h2>三幕流程</h2>
+      <details open>
+        <summary>第一幕：生日游戏</summary>
+        <div class="inner">
+          <p><strong>目标：</strong>让玩家以为这是一次有点民俗感的生日聚会。主角说自己最近总做怪梦，所以请大家来参加一场“打破噩梦”的生日游戏。</p>
+          <ol>
+            <li>入场，发A本。</li>
+            <li>主持人槐序介绍“年轮游戏”：每个人抽一张关键词卡。</li>
+            <li>大家做三个生日游戏。</li>
+            <li>吃蛋糕。</li>
+            <li>主角准备坦白轮回。</li>
+            <li>灯灭或音频响起，主角死亡。</li>
+          </ol>
+          <p><strong>生日祝词关键词：</strong></p>
+          <p>
+            <span class="tag">名字</span><span class="tag">歌声</span><span class="tag">兄弟</span><span class="tag">枪声</span><span class="tag">舞台</span><span class="tag">天台</span><span class="tag">诗</span><span class="tag">胶片</span><span class="tag">手术</span><span class="tag">年轮</span>
+          </p>
+          <div class="quote">第一幕爆点：吃完蛋糕后，主角说：“如果我等一下死了，别急着哭。先想想，你们是不是都见过我。”随后主角死亡。</div>
+        </div>
+      </details>
+      <details>
+        <summary>第二幕：谁杀了主角</summary>
+        <div class="inner">
+          <p><strong>目标：</strong>玩家以为进入凶案推理，要查谁导致第七世死亡。</p>
+          <p><strong>每个角色都可疑：</strong></p>
+          <ul>
+            <li>Maogeng懂医学，可能下药。</li>
+            <li>Tommy和Qingyuan与枪案有关。</li>
+            <li>Kevin带来场地，可能制造事故。</li>
+            <li>Ashlee的舞台道具可能出问题。</li>
+            <li>Charles和沈灯控制视频。</li>
+            <li>槐序懂献祭仪式。</li>
+          </ul>
+          <p><strong>第二幕反转：</strong>主角死亡并非某个人直接杀害，而是轮回规则启动。但规则启动不是不可阻止。只要他们在零点前还原前六世，承认和主角的因果，就有机会把主角从第七次死亡中拉回来。</p>
+        </div>
+      </details>
+      <details>
+        <summary>第三幕：年轮还原</summary>
+        <div class="inner">
+          <p><strong>目标：</strong>还原七世因果，发现所有人的重要之人都是主角。</p>
+          <ol>
+            <li>第一世主角是谁？她为什么车祸后没被救回？</li>
+            <li>第二世主角是谁？Maogeng为什么崩溃？</li>
+            <li>第三世主角是谁？谁为Tommy挡枪？</li>
+            <li>第四世主角是谁？谁误杀了上一世自己？</li>
+            <li>第五世主角是谁？Ashlee和Charles分别与他有什么关系？</li>
+            <li>第六世主角是谁？Kevin为什么想跳楼？谁救了他？</li>
+            <li>第七世主角为什么把大家叫来？</li>
+          </ol>
+          <p><strong>最终答案：</strong>主角每一世都不是孤独死去。每一次死亡都有一个人爱过她、救过她、错过她、亏欠她。诅咒之所以无法打破，是因为每一世的爱都没有被认出来。</p>
+          <div class="quote">温馨结尾：大家一起说出：“这一世，不把你献给命运。”主角醒来，或者留下开放式结局：蛋糕上的第 27 根蜡烛终于没有熄灭。</div>
+        </div>
+      </details>
+    </section>
+  </main>
+</body>
+</html>
